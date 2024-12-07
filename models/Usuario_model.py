@@ -2,7 +2,7 @@ import sqlite3
 
 class Usuario_model:
     def __init__(self):
-        self.__conn = sqlite3.connect("../trabajo.db")
+        self.__conn = sqlite3.connect("trabajo.db")
 
     def get(self, id):
         query = self.__conn.execute(f"SELECT * FROM usuarios WHERE id = {id}")
@@ -19,7 +19,6 @@ class Usuario_model:
         return data
     
     def getAll(self, where=''):
-
         if where == '':
             where = '1 > 0'
 

@@ -2,7 +2,7 @@ import sqlite3
 
 class CtaCorriente_model:
     def __init__(self):
-        self.__conn = sqlite3.connect("../trabajo.db")
+        self.__conn = sqlite3.connect("trabajo.db")
 
     def get(self, id):
         query = self.__conn.execute(f"SELECT * FROM ctas_corrientes WHERE id = {id}")

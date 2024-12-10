@@ -27,7 +27,8 @@ conn.execute("""
         saldo_previo DECIMAL(10,2),
         monto_movimiento DECIMAL(10,2),
         saldo_final DECIMAL(10,2),
-        fecha_movimiento DATETIME DEFAULT CURRENT_TIMESTAMP
+        fecha_movimiento DATETIME DEFAULT CURRENT_TIMESTAMP,
+        terceros INTEGER DEFAULT 0
     );
 """)
 

@@ -1,4 +1,6 @@
 from views.MantenedorUsuarios import MantenedorUsuarios
+from views.MantenedorCuentasCorrientes import MantenedorCuentasCorrientes
+from views.MantenedorTipoMovimientos import MantenedorTipoMovimientos
 
 from helpers.validate_helper import validarOpcion
 from helpers.validate_helper import cerrarApp
@@ -25,10 +27,12 @@ def main():
     if int(opcion_seleccionada) == 1:
         mantenedorUsuarios = MantenedorUsuarios(main_menu=main)
         mantenedorUsuarios.menu()
-    # elif int(opcion_seleccionada) == 2:
-
-    # elif int(opcion_seleccionada) == 3:
-
+    elif int(opcion_seleccionada) == 2:
+        mantenedorCuentasCorrientes = MantenedorCuentasCorrientes(main_menu=main)
+        mantenedorCuentasCorrientes.menu()
+    elif int(opcion_seleccionada) == 3:
+        mantenedorTipoMovimientos = MantenedorTipoMovimientos(main_menu=main)
+        mantenedorTipoMovimientos.menu()
     # elif int(opcion_seleccionada) == 4:
 
     # elif int(opcion_seleccionada) == 5:

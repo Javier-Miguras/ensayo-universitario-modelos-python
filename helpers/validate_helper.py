@@ -1,4 +1,5 @@
 import time
+import sys
 
 def validarOpcion(opcion, ini, fin):
     try:
@@ -12,4 +13,4 @@ def validarOpcion(opcion, ini, fin):
 def cerrarApp():
     print("¡Gracias por usar el Sistema! Saliendo...")
     time.sleep(3)
-    SystemExit
+    sys.exit()

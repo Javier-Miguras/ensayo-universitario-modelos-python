@@ -23,7 +23,7 @@ def main():
         opcion_seleccionada = input("Opción inválida, vuelva a intentar: ")
 
     if int(opcion_seleccionada) == 1:
-        mantenedorUsuarios = MantenedorUsuarios()
+        mantenedorUsuarios = MantenedorUsuarios(main_menu=main)
         mantenedorUsuarios.menu()
     # elif int(opcion_seleccionada) == 2:
 
